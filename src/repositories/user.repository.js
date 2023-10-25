@@ -10,6 +10,7 @@ export default class UserRepository {
         await this.dao.create(dataToInsert)
     }
     getById = async(id) => await this.dao.getById(id)
+    getByEmail = async(email) => await this.dao.getByEmail(email)
     updata = async(id, data) => await this.dao.updata(id, data)
     deleteById = async(id) => await this.dao.deleteById(id)
 }

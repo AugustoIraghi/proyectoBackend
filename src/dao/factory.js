@@ -6,14 +6,14 @@ export let Product
 export let User
 
 switch (config.persistence) {
-    case 'FILE':
-        const { default: CartFile } = await import ('./file/cart.file.js')
-        const { default: ProductFile } = await import ('./file/product.file.js')
-        const { default: UserFile } = await import ('./file/user.file.js')
-        User = UserFile
-        Product = ProductFile
-        Cart = CartFile
-        break;
+    // case 'FILE':
+    //     const { default: CartFile } = await import ('./file/cart.file.js')
+    //     const { default: ProductFile } = await import ('./file/product.file.js')
+    //     const { default: UserFile } = await import ('./file/user.file.js')
+    //     User = UserFile
+    //     Product = ProductFile
+    //     Cart = CartFile
+    //     break;
     case 'MONGO':
         mongoose.connect(config.mongoURI, { dbName: config.mongoDBname })
         const { default: CartMongo } = await import ('./mongo/cart.mongo.js')

@@ -1,4 +1,4 @@
-import ProductDTO from "../dto/product.dto";
+import ProductDTO from "../dto/product.dto.js";
 
 export default class UserRepository {
     constructor(dao) {
@@ -12,4 +12,5 @@ export default class UserRepository {
     getById = async(id) => await this.dao.getById(id)
     updata = async(id, data) => await this.dao.updata(id, data)
     deleteById = async(id) => await this.dao.deleteById(id)
+    changeRole = async(id, role) => await this.dao.changeRole(id, role)
 }

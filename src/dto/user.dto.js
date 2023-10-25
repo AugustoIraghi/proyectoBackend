@@ -6,10 +6,7 @@ export default class UserDTO {
         this.email = user.email
         this.firstname = user.firstname
         this.lastname = user.lastname
-        this.address = user.address
-        this.phone = user.phone
         this.role = user.role || 'user'
-        this.cart = user.cart || []
-        this.timestamp = user.timestamp
+        this.cart = user.cart
     }
 }

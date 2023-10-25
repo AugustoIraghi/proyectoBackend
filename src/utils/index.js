@@ -24,7 +24,7 @@ export const generateToken = (user) => {
     return token;
 }
 
-export const authenticateToken = (req, res, next) => {
+export const authToken = (req, res, next) => {
     let token = req.headers.auth
     if (!token) token = req.signedCookies[JWT_PRIVATE_KEY].token;
     if (!token) return res.status(401).json({ message: 'No token provided' });

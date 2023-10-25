@@ -1,12 +1,15 @@
 import nodemailer from 'nodemailer'
 import Mailgen from 'mailgen'
-import twilio from 'twilio'
+
+const testAccount = await nodemailer.createTestAccount()
 
 const config = {
-    service: 'gmail',
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
     auth: {
-        user: process.env.NODEMAILER_USER,
-        pass: process.env.NODEMAILER_PASS
+        user: testAccount.user,
+        pass: testAccount.pass
     }
 }
 
@@ -38,12 +41,16 @@ export const signupMail = async (req, res) => {
     const mail = mailGenerator.generate(content)
     const message = {
         from: 'Coder Ecommerce',
-        to: req.body.email,
+        to: req.user.email,
         subject: 'Bienvenido a Coder Ecommerce',
         html: mail
     }
 
+
     transporter.sendMail(message)
+        .then(data => console.log('Email enviado: ', nodemailer.getTestMessageUrl(data), data))
+        .then(data => logger.info('Email enviado: ', nodemailer.getTestMessageUrl(data)))
         .then(data => res.status(201).json({ message: 'You should have recieved an email', info: nodemailer.getTestMessageUrl(data) }))
+        .catch(err => logger.error(err))
         .catch(err => res.status(500).json({ err }))
 }

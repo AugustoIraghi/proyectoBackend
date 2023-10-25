@@ -12,4 +12,9 @@ export default class CartRepository {
     getById = async(id) => await this.dao.getById(id)
     updata = async(id, data) => await this.dao.updata(id, data)
     deleteById = async(id) => await this.dao.deleteById(id)
+    addProduct = async(id, product) => await this.dao.addProduct(id, product)
+    deleteProduct = async(id, product) => await this.dao.deleteProduct(id, product)
+    deleteAllProducts = async(id) => await this.dao.deleteAllProducts(id)
+    getProducts = async(id) => await this.dao.getProducts(id)
+    purchase = async(id) => await this.dao.purchase(id)
 }

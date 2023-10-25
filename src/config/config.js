@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 export default {
+    env: process.env.NODE_ENV || 'DEV',
     persistence: process.env.PERSISTENCE || 'MONGO',
     mongoURI: process.env.MONGO_URI,
     mongoDBname: process.env.MONGO_DB_NAME,
