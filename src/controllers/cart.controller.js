@@ -1,4 +1,4 @@
-import CartService from "../repositories/cart.repository.js";
+import { CartService } from '../repositories/index.js'
 
 export const get = async(req, res) => {
     const carts = await CartService.get()
@@ -6,7 +6,7 @@ export const get = async(req, res) => {
 }
 
 export const create = async(req, res) => {
-    const cartNew = await CartService.create(cart)
+    const cartNew = await CartService.create()
     res.json({ status: 'success', cart: cartNew })
 }
 

@@ -13,4 +13,7 @@ export default class UserRepository {
     getByEmail = async(email) => await this.dao.getByEmail(email)
     updata = async(id, data) => await this.dao.updata(id, data)
     deleteById = async(id) => await this.dao.deleteById(id)
+    changeRole = async(id, role) => await this.dao.changeRole(id, role)
+    changeStatus = async(id, status) => await this.dao.changeStatus(id, status)
+    changePassword = async(id, password) => await this.dao.changePassword(id, password)
 }

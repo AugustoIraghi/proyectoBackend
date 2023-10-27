@@ -1,4 +1,4 @@
-import ProductService from "../repositories/product.repository.js";
+import { ProductService } from '../repositories/index.js'
 
 export const get = async(req, res) => {
     const products = await ProductService.get()
@@ -8,7 +8,7 @@ export const get = async(req, res) => {
 export const create = async(req, res) => {
     const { name, brand, price, stock, category, thumbnail, description } = req.body
     if (!name || !brand || !price || !stock || !category) return res.status(400).send({ status: 'error', error: 'Missing params' })
-    const productNew = await ProductService.create(product)
+    const productNew = await ProductService.create({ name, brand, price, stock, category, thumbnail, description })
     res.json({ product: productNew })
 }
 

@@ -1,5 +1,6 @@
 import config from '../config/config.js'
 import mongoose from 'mongoose'
+import logger from '../utils/logger.js'
 
 export let Cart
 export let Product
@@ -16,12 +17,13 @@ switch (config.persistence) {
     //     break;
     case 'MONGO':
         mongoose.connect(config.mongoURI, { dbName: config.mongoDBname })
-        const { default: CartMongo } = await import ('./mongo/cart.mongo.js')
-        const { default: ProductMongo } = await import ('./mongo/product.mongo.js')
-        const { default: UserMongo } = await import ('./mongo/user.mongo.js')
+        const { default: CartMongo } = await import ('./mongo/cart.mongo.dao.js')
+        const { default: ProductMongo } = await import ('./mongo/product.mongo.dao.js')
+        const { default: UserMongo } = await import ('./mongo/user.mongo.dao.js')
         User = UserMongo
         Product = ProductMongo
         Cart = CartMongo
+        logger.info('MongoDB connected')
         break;
 
     default:

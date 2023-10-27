@@ -1,6 +1,5 @@
 export default class UserDTO {
     constructor(user) {
-        this.id = user.id || user._id || null
         this.username = user.username
         this.password = user.password
         this.email = user.email
@@ -8,5 +7,6 @@ export default class UserDTO {
         this.lastname = user.lastname
         this.role = user.role || 'user'
         this.cart = user.cart
+        this.status = user.status || 'pending'
     }
 }

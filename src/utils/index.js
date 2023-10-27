@@ -2,6 +2,7 @@ import bcrypt from 'bcrypt';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import jwt from 'jsonwebtoken';
+import nodemailer from 'nodemailer'
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,6 +11,17 @@ export default __dirname;
 
 export const JWT_PRIVATE_KEY = 'secret';
 export const JWT_COOKIE_NAME = 'token';
+
+const testAccount = await nodemailer.createTestAccount()
+const mailConfig = {
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
+    auth: {
+        user: testAccount.user,
+        pass: testAccount.pass
+    }
+}
 
 export const createHash = password => {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(10));
@@ -25,7 +37,7 @@ export const generateToken = (user) => {
 }
 
 export const authToken = (req, res, next) => {
-    let token = req.headers.auth
+    let token = req.params.token;
     if (!token) token = req.signedCookies[JWT_PRIVATE_KEY].token;
     if (!token) return res.status(401).json({ message: 'No token provided' });
     jwt.verify(token, JWT_PRIVATE_KEY, (err, user) => {
@@ -51,3 +63,5 @@ export const passportCall = strategy => {
         })(req, res, next);
     }
 }
+
+export const transporter = nodemailer.createTransport(mailConfig)

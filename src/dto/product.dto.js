@@ -1,6 +1,5 @@
 export default class ProductDTO {
     constructor(product) {
-        this.id = product.id || product._id || null
         this.name = product.name
         this.brand = product.brand || ''
         this.price = product.price
