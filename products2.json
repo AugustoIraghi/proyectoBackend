@@ -1,0 +1,1001 @@
+[
+    {
+      "name": "TV 1",
+      "brand": "Sony",
+      "price": "500",
+      "stock": "10",
+      "category": "electronics",
+      "description": "High definition LED TV",
+      "thumbnail": "https://example.com/tv1.jpg"
+    },
+    {
+      "name": "Laptop 1",
+      "brand": "Dell",
+      "price": "800",
+      "stock": "5",
+      "category": "electronics",
+      "description": "15-inch Intel Core i5",
+      "thumbnail": "https://example.com/laptop1.jpg"
+    },
+    {
+      "name": "Headphones 1",
+      "brand": "Bose",
+      "price": "200",
+      "stock": "20",
+      "category": "electronics",
+      "description": "Wireless noise-cancelling headphones",
+      "thumbnail": "https://example.com/headphones1.jpg"
+    },
+    {
+      "name": "Camera 1",
+      "brand": "Canon",
+      "price": "600",
+      "stock": "8",
+      "category": "electronics",
+      "description": "Digital SLR camera",
+      "thumbnail": "https://example.com/camera1.jpg"
+    },
+    {
+      "name": "Tablet 1",
+      "brand": "Samsung",
+      "price": "400",
+      "stock": "15",
+      "category": "electronics",
+      "description": "10-inch Android tablet",
+      "thumbnail": "https://example.com/tablet1.jpg"
+    },
+    {
+      "name": "Smartwatch 1",
+      "brand": "Apple",
+      "price": "300",
+      "stock": "12",
+      "category": "electronics",
+      "description": "Waterproof fitness tracker",
+      "thumbnail": "https://example.com/smartwatch1.jpg"
+    },
+    {
+      "name": "Printer 1",
+      "brand": "HP",
+      "price": "100",
+      "stock": "25",
+      "category": "electronics",
+      "description": "Wireless all-in-one printer",
+      "thumbnail": "https://example.com/printer1.jpg"
+    },
+    {
+      "name": "Speakers 1",
+      "brand": "JBL",
+      "price": "150",
+      "stock": "18",
+      "category": "electronics",
+      "description": "Bluetooth portable speakers",
+      "thumbnail": "https://example.com/speakers1.jpg"
+    },
+    {
+      "name": "Monitor 1",
+      "brand": "LG",
+      "price": "300",
+      "stock": "10",
+      "category": "electronics",
+      "description": "27-inch 4K gaming monitor",
+      "thumbnail": "https://example.com/monitor1.jpg"
+    },
+    {
+      "name": "Router 1",
+      "brand": "Linksys",
+      "price": "80",
+      "stock": "15",
+      "category": "electronics",
+      "description": "Dual-band Wi-Fi router",
+      "thumbnail": "https://example.com/router1.jpg"
+    },
+    {
+      "name": "TV 2",
+      "brand": "Samsung",
+      "price": "600",
+      "stock": "10",
+      "category": "electronics",
+      "description": "Ultra HD LED TV",
+      "thumbnail": "https://example.com/tv2.jpg"
+    },
+    {
+      "name": "Laptop 2",
+      "brand": "HP",
+      "price": "700",
+      "stock": "5",
+      "category": "electronics",
+      "description": "13-inch Intel Core i7",
+      "thumbnail": "https://example.com/laptop2.jpg"
+    },
+    {
+      "name": "Headphones 2",
+      "brand": "Sony",
+      "price": "150",
+      "stock": "20",
+      "category": "electronics",
+      "description": "Wireless over-ear headphones",
+      "thumbnail": "https://example.com/headphones2.jpg"
+    },
+    {
+      "name": "Camera 2",
+      "brand": "Nikon",
+      "price": "800",
+      "stock": "8",
+      "category": "electronics",
+      "description": "Mirrorless camera with lens kit",
+      "thumbnail": "https://example.com/camera2.jpg"
+    },
+    {
+      "name": "Tablet 2",
+      "brand": "Apple",
+      "price": "500",
+      "stock": "15",
+      "category": "electronics",
+      "description": "12.9-inch iPad Pro",
+      "thumbnail": "https://example.com/tablet2.jpg"
+    },
+    {
+      "name": "Smartwatch 2",
+      "brand": "Samsung",
+      "price": "250",
+      "stock": "12",
+      "category": "electronics",
+      "description": "Heart rate monitoring smartwatch",
+      "thumbnail": "https://example.com/smartwatch2.jpg"
+    },
+    {
+      "name": "Printer 2",
+      "brand": "Epson",
+      "price": "150",
+      "stock": "25",
+      "category": "electronics",
+      "description": "Wireless color inkjet printer",
+      "thumbnail": "https://example.com/printer2.jpg"
+    },
+    {
+      "name": "Speakers 2",
+      "brand": "Bose",
+      "price": "250",
+      "stock": "18",
+      "category": "electronics",
+      "description": "Home theater surround sound system",
+      "thumbnail": "https://example.com/speakers2.jpg"
+    },
+    {
+      "name": "Monitor 2",
+      "brand": "ASUS",
+      "price": "400",
+      "stock": "10",
+      "category": "electronics",
+      "description": "34-inch curved ultrawide monitor",
+      "thumbnail": "https://example.com/monitor2.jpg"
+    },
+    {
+      "name": "Router 2",
+      "brand": "NETGEAR",
+      "price": "120",
+      "stock": "15",
+      "category": "electronics",
+      "description": "Tri-band Wi-Fi 6 router",
+      "thumbnail": "https://example.com/router2.jpg"
+    },
+    {
+      "name": "TV 3",
+      "brand": "LG",
+      "price": "700",
+      "stock": "10",
+      "category": "electronics",
+      "description": "OLED 4K HDR smart TV",
+      "thumbnail": "https://example.com/tv3.jpg"
+    },
+    {
+      "name": "Laptop 3",
+      "brand": "Lenovo",
+      "price": "900",
+      "stock": "5",
+      "category": "electronics",
+      "description": "14-inch Intel Core i7",
+      "thumbnail": "https://example.com/laptop3.jpg"
+    },
+    {
+      "name": "Headphones 3",
+      "brand": "Sennheiser",
+      "price": "300",
+      "stock": "20",
+      "category": "electronics",
+      "description": "Wireless noise-cancelling earbuds",
+      "thumbnail": "https://example.com/headphones3.jpg"
+    },
+    {
+      "name": "Camera 3",
+      "brand": "Sony",
+      "price": "1000",
+      "stock": "8",
+      "category": "electronics",
+      "description": "Full-frame mirrorless camera",
+      "thumbnail": "https://example.com/camera3.jpg"
+    },
+    {
+      "name": "Tablet 3",
+      "brand": "Microsoft",
+      "price": "600",
+      "stock": "15",
+      "category": "electronics",
+      "description": "Surface Pro 7 with keyboard",
+      "thumbnail": "https://example.com/tablet3.jpg"
+    },
+    {
+      "name": "Smartwatch 3",
+      "brand": "Fitbit",
+      "price": "150",
+      "stock": "12",
+      "category": "electronics",
+      "description": "Fitness tracker with heart rate monitor",
+      "thumbnail": "https://example.com/smartwatch3.jpg"
+    },
+    {
+      "name": "Printer 3",
+      "brand": "Canon",
+      "price": "200",
+      "stock": "25",
+      "category": "electronics",
+      "description": "Wireless photo printer with scanner",
+      "thumbnail": "https://example.com/printer3.jpg"
+    },
+    {
+      "name": "Speakers 3",
+      "brand": "Harman Kardon",
+      "price": "350",
+      "stock": "18",
+      "category": "electronics",
+      "description": "Wireless home audio system",
+      "thumbnail": "https://example.com/speakers3.jpg"
+    },
+    {
+      "name": "Monitor 3",
+      "brand": "Acer",
+      "price": "200",
+      "stock": "10",
+      "category": "electronics",
+      "description": "23.8-inch Full HD IPS monitor",
+      "thumbnail": "https://example.com/monitor3.jpg"
+    },
+    {
+      "name": "Router 3",
+      "brand": "TP-Link",
+      "price": "50",
+      "stock": "15",
+      "category": "electronics",
+      "description": "AC1750 dual-band Wi-Fi router",
+      "thumbnail": "https://example.com/router3.jpg"
+    },
+    {
+      "name": "TV 4",
+      "brand": "Vizio",
+      "price": "400",
+      "stock": "10",
+      "category": "electronics",
+      "description": "1080p LED smart TV",
+      "thumbnail": "https://example.com/tv4.jpg"
+    },
+    {
+      "name": "Laptop 4",
+      "brand": "Acer",
+      "price": "600",
+      "stock": "5",
+      "category": "electronics",
+      "description": "15.6-inch AMD Ryzen 5",
+      "thumbnail": "https://example.com/laptop4.jpg"
+    },
+    {
+      "name": "Headphones 4",
+      "brand": "Beats",
+      "price": "250",
+      "stock": "20",
+      "category": "electronics",
+      "description": "Wireless on-ear headphones",
+      "thumbnail": "https://example.com/headphones4.jpg"
+    },
+    {
+      "name": "Camera 4",
+      "brand": "Panasonic",
+      "price": "500",
+      "stock": "8",
+      "category": "electronics",
+      "description": "Point-and-shoot digital camera",
+      "thumbnail": "https://example.com/camera4.jpg"
+    },
+    {
+      "name": "Tablet 4",
+      "brand": "Amazon",
+      "price": "150",
+      "stock": "15",
+      "category": "electronics",
+      "description": "Fire HD 10 tablet with Alexa",
+      "thumbnail": "https://example.com/tablet4.jpg"
+    },
+    {
+      "name": "Smartwatch 4",
+      "brand": "Garmin",
+      "price": "200",
+      "stock": "12",
+      "category": "electronics",
+      "description": "GPS running watch",
+      "thumbnail": "https://example.com/smartwatch4.jpg"
+    },
+    {
+      "name": "Printer 4",
+      "brand": "Brother",
+      "price": "80",
+      "stock": "25",
+      "category": "electronics",
+      "description": "Monochrome laser printer",
+      "thumbnail": "https://example.com/printer4.jpg"
+    },
+    {
+      "name": "Speakers 4",
+      "brand": "Sonos",
+      "price": "300",
+      "stock": "18",
+      "category": "electronics",
+      "description": "Wireless multi-room audio system",
+      "thumbnail": "https://example.com/speakers4.jpg"
+    },
+    {
+      "name": "Monitor 4",
+      "brand": "ViewSonic",
+      "price": "250",
+      "stock": "10",
+      "category": "electronics",
+      "description": "21.5-inch Full HD LED monitor",
+      "thumbnail": "https://example.com/monitor4.jpg"
+    },
+    {
+      "name": "Router 4",
+      "brand": "D-Link",
+      "price": "70",
+      "stock": "15",
+      "category": "electronics",
+      "description": "AC1900 dual-band Wi-Fi router",
+      "thumbnail": "https://example.com/router4.jpg"
+    },
+    {
+      "name": "TV 5",
+      "brand": "TCL",
+      "price": "300",
+      "stock": "10",
+      "category": "electronics",
+      "description": "Roku Smart LED TV",
+      "thumbnail": "https://example.com/tv5.jpg"
+    },
+    {
+      "name": "Laptop 5",
+      "brand": "Microsoft",
+      "price": "1000",
+      "stock": "5",
+      "category": "electronics",
+      "description": "Surface Book 3 with detachable screen",
+      "thumbnail": "https://example.com/laptop5.jpg"
+    },
+    {
+      "name": "Headphones 5",
+      "brand": "Jabra",
+      "price": "180",
+      "stock": "20",
+      "category": "electronics",
+      "description": "Wireless sports earbuds",
+      "thumbnail": "https://example.com/headphones5.jpg"
+    },
+    {
+      "name": "Camera 5",
+      "brand": "Fujifilm",
+      "price": "700",
+      "stock": "8",
+      "category": "electronics",
+      "description": "Mirrorless camera with 4K video",
+      "thumbnail": "https://example.com/camera5.jpg"
+    },
+    {
+      "name": "Tablet 5",
+      "brand": "Lenovo",
+      "price": "300",
+      "stock": "15",
+      "category": "electronics",
+      "description": "8-inch Android tablet",
+      "thumbnail": "https://example.com/tablet5.jpg"
+    },
+    {
+        "name": "Sony TV",
+        "brand": "Sony",
+        "price": "$499.99",
+        "stock": "10",
+        "category": "electronics",
+        "description": "This Sony TV delivers stunning picture quality and immersive sound.",
+        "thumbnail": "https://example.com/sony_tv.jpg"
+    },
+    {
+        "name": "Apple Watch Series 6",
+        "brand": "Apple",
+        "price": "$399.99",
+        "stock": "5",
+        "category": "electronics",
+        "description": "The Apple Watch Series 6 is a powerful health and fitness companion.",
+        "thumbnail": "https://example.com/apple_watch.jpg"
+    },
+    {
+        "name": "Bose QuietComfort 35 II",
+        "brand": "Bose",
+        "price": "$349.99",
+        "stock": "15",
+        "category": "electronics",
+        "description": "These Bose headphones offer world-class noise cancellation.",
+        "thumbnail": "https://example.com/bose_headphones.jpg"
+    },
+    {
+        "name": "Samsung Galaxy Tab S7",
+        "brand": "Samsung",
+        "price": "$649.99",
+        "stock": "8",
+        "category": "electronics",
+        "description": "The Samsung Galaxy Tab S7 is a versatile and powerful tablet.",
+        "thumbnail": "https://example.com/samsung_tablet.jpg"
+    },
+    {
+        "name": "Canon EOS Rebel T7",
+        "brand": "Canon",
+        "price": "$549.99",
+        "stock": "3",
+        "category": "electronics",
+        "description": "The Canon EOS Rebel T7 is a beginner-friendly DSLR camera.",
+        "thumbnail": "https://example.com/canon_camera.jpg"
+    },
+    {
+        "name": "LG Soundbar",
+        "brand": "LG",
+        "price": "$299.99",
+        "stock": "12",
+        "category": "electronics",
+        "description": "This LG soundbar enhances your home theater audio experience.",
+        "thumbnail": "https://example.com/lg_soundbar.jpg"
+    },
+    {
+        "name": "Amazon Echo Dot",
+        "brand": "Amazon",
+        "price": "$49.99",
+        "stock": "20",
+        "category": "electronics",
+        "description": "The Amazon Echo Dot is a compact and smart speaker with Alexa.",
+        "thumbnail": "https://example.com/amazon_echo.jpg"
+    },
+    {
+        "name": "DJI Mavic Air 2",
+        "brand": "DJI",
+        "price": "$799.99",
+        "stock": "6",
+        "category": "electronics",
+        "description": "The DJI Mavic Air 2 is a high-performance and portable drone.",
+        "thumbnail": "https://example.com/dji_drone.jpg"
+    },
+    {
+        "name": "Fitbit Versa 3",
+        "brand": "Fitbit",
+        "price": "$229.99",
+        "stock": "9",
+        "category": "electronics",
+        "description": "The Fitbit Versa 3 helps you track your health and fitness goals.",
+        "thumbnail": "https://example.com/fitbit_watch.jpg"
+    },
+    {
+        "name": "Sony WH-1000XM4",
+        "brand": "Sony",
+        "price": "$349.99",
+        "stock": "7",
+        "category": "electronics",
+        "description": "These Sony headphones offer industry-leading noise cancellation.",
+        "thumbnail": "https://example.com/sony_headphones.jpg"
+    },
+    {
+        "name": "Samsung QLED 4K TV",
+        "brand": "Samsung",
+        "price": "$999.99",
+        "stock": "4",
+        "category": "electronics",
+        "description": "This Samsung QLED TV delivers stunning visuals with vibrant colors.",
+        "thumbnail": "https://example.com/samsung_tv.jpg"
+    },
+    {
+        "name": "Apple iPad Air",
+        "brand": "Apple",
+        "price": "$599.99",
+        "stock": "11",
+        "category": "electronics",
+        "description": "The Apple iPad Air offers a powerful and immersive tablet experience.",
+        "thumbnail": "https://example.com/apple_tablet.jpg"
+    },
+    {
+        "name": "Nikon D3500",
+        "brand": "Nikon",
+        "price": "$499.99",
+        "stock": "2",
+        "category": "electronics",
+        "description": "The Nikon D3500 is a versatile and compact DSLR camera.",
+        "thumbnail": "https://example.com/nikon_camera.jpg"
+    },
+    {
+        "name": "Bose SoundLink Revolve",
+        "brand": "Bose",
+        "price": "$199.99",
+        "stock": "14",
+        "category": "electronics",
+        "description": "The Bose SoundLink Revolve delivers 360-degree sound.",
+        "thumbnail": "https://example.com/bose_speaker.jpg"
+    },
+    {
+        "name": "Google Nest Hub",
+        "brand": "Google",
+        "price": "$89.99",
+        "stock": "18",
+        "category": "electronics",
+        "description": "The Google Nest Hub is a smart display with built-in Google Assistant.",
+        "thumbnail": "https://example.com/google_nest.jpg"
+    },
+    {
+        "name": "GoPro HERO9 Black",
+        "brand": "GoPro",
+        "price": "$449.99",
+        "stock": "5",
+        "category": "electronics",
+        "description": "The GoPro HERO9 Black captures stunning 5K videos and 20MP photos.",
+        "thumbnail": "https://example.com/gopro_camera.jpg"
+    },
+    {
+        "name": "JBL Flip 5",
+        "brand": "JBL",
+        "price": "$119.99",
+        "stock": "16",
+        "category": "electronics",
+        "description": "The JBL Flip 5 is a portable and waterproof Bluetooth speaker.",
+        "thumbnail": "https://example.com/jbl_speaker.jpg"
+    },
+    {
+        "name": "Microsoft Surface Pro 7",
+        "brand": "Microsoft",
+        "price": "$899.99",
+        "stock": "7",
+        "category": "electronics",
+        "description": "The Microsoft Surface Pro 7 is a versatile and powerful tablet-laptop hybrid.",
+        "thumbnail": "https://example.com/microsoft_surface.jpg"
+    },
+    {
+        "name": "Garmin Forerunner 245",
+        "brand": "Garmin",
+        "price": "$299.99",
+        "stock": "9",
+        "category": "electronics",
+        "description": "The Garmin Forerunner 245 is a GPS running watch with advanced performance metrics.",
+        "thumbnail": "https://example.com/garmin_watch.jpg"
+    },
+    {
+        "name": "LG OLED 4K TV",
+        "brand": "LG",
+        "price": "$1499.99",
+        "stock": "3",
+        "category": "electronics",
+        "description": "This LG OLED TV offers stunning picture quality with deep blacks.",
+        "thumbnail": "https://example.com/lg_tv.jpg"
+    },
+    {
+        "name": "Bose QuietComfort Earbuds",
+        "brand": "Bose",
+        "price": "$279.99",
+        "stock": "6",
+        "category": "electronics",
+        "description": "The Bose QuietComfort Earbuds offer immersive sound and noise cancellation.",
+        "thumbnail": "https://example.com/bose_earbuds.jpg"
+    },
+    {
+        "name": "Sony PlayStation 5",
+        "brand": "Sony",
+        "price": "$499.99",
+        "stock": "4",
+        "category": "electronics",
+        "description": "The Sony PlayStation 5 delivers next-generation gaming experiences.",
+        "thumbnail": "https://example.com/sony_ps5.jpg"
+    },
+    {
+        "name": "Kindle Paperwhite",
+        "brand": "Amazon",
+        "price": "$129.99",
+        "stock": "10",
+        "category": "electronics",
+        "description": "The Kindle Paperwhite is a waterproof and high-resolution e-reader.",
+        "thumbnail": "https://example.com/kindle.jpg"
+    },
+    {
+        "name": "Roku Streaming Stick+",
+        "brand": "Roku",
+        "price": "$49.99",
+        "stock": "15",
+        "category": "electronics",
+        "description": "The Roku Streaming Stick+ offers 4K streaming with HDR support.",
+        "thumbnail": "https://example.com/roku.jpg"
+    },
+    {
+        "name": "Samsung Galaxy Watch Active2",
+        "brand": "Samsung",
+        "price": "$249.99",
+        "stock": "8",
+        "category": "electronics",
+        "description": "The Samsung Galaxy Watch Active2 is a stylish and feature-packed smartwatch.",
+        "thumbnail": "https://example.com/samsung_watch.jpg"
+    },
+    {
+        "name": "Canon PowerShot G7 X Mark III",
+        "brand": "Canon",
+        "price": "$749.99",
+        "stock": "3",
+        "category": "electronics",
+        "description": "The Canon PowerShot G7 X Mark III is a compact and powerful digital camera.",
+        "thumbnail": "https://example.com/canon_powershot.jpg"
+    },
+    {
+        "name": "Sonos Beam",
+        "brand": "Sonos",
+        "price": "$399.99",
+        "stock": "12",
+        "category": "electronics",
+        "description": "The Sonos Beam is a smart soundbar with built-in voice control.",
+        "thumbnail": "https://example.com/sonos_beam.jpg"
+    },
+    {
+        "name": "Xbox Series X",
+        "brand": "Microsoft",
+        "price": "$499.99",
+        "stock": "6",
+        "category": "electronics",
+        "description": "The Xbox Series X delivers high-fidelity gaming with fast load times.",
+        "thumbnail": "https://example.com/microsoft_xbox.jpg"
+    },
+    {
+        "name": "HP Pavilion 27xw",
+        "brand": "HP",
+        "price": "$249.99",
+        "stock": "9",
+        "category": "electronics",
+        "description": "The HP Pavilion 27xw is a Full HD IPS monitor with ultra-wide viewing angles.",
+        "thumbnail": "https://example.com/hp_monitor.jpg"
+    },
+    {
+        "name": "Apple AirPods Pro",
+        "brand": "Apple",
+        "price": "$249.99",
+        "stock": "7",
+        "category": "electronics",
+        "description": "The Apple AirPods Pro offer active noise cancellation and a customizable fit.",
+        "thumbnail": "https://example.com/apple_airpods.jpg"
+    },
+    {
+        "name": "Lenovo Chromebook Duet",
+        "brand": "Lenovo",
+        "price": "$299.99",
+        "stock": "4",
+        "category": "electronics",
+        "description": "The Lenovo Chromebook Duet is a 2-in-1 laptop with a detachable keyboard.",
+        "thumbnail": "https://example.com/lenovo_chromebook.jpg"
+    },
+    {
+        "name": "Bose Home Speaker 300",
+        "brand": "Bose",
+        "price": "$199.99",
+        "stock": "14",
+        "category": "electronics",
+        "description": "The Bose Home Speaker 300 delivers room-filling sound and built-in voice assistants.",
+        "thumbnail": "https://example.com/bose_home.jpg"
+    },
+    {
+        "name": "Nintendo Switch",
+        "brand": "Nintendo",
+        "price": "$299.99",
+        "stock": "18",
+        "category": "electronics",
+        "description": "The Nintendo Switch offers versatile gaming experiences at home and on the go.",
+        "thumbnail": "https://example.com/nintendo_switch.jpg"
+    },
+    {
+        "name": "LG Ultragear 27GL850",
+        "brand": "LG",
+        "price": "$499.99",
+        "stock": "5",
+        "category": "electronics",
+        "description": "The LG Ultragear 27GL850 is a QHD gaming monitor with a fast refresh rate.",
+        "thumbnail": "https://example.com/lg_monitor.jpg"
+    },
+    {
+        "name": "JBL Charge 4",
+        "brand": "JBL",
+        "price": "$179.99",
+        "stock": "16",
+        "category": "electronics",
+        "description": "The JBL Charge 4 is a portable speaker with a built-in power bank.",
+        "thumbnail": "https://example.com/jbl_charge.jpg"
+    },
+    {
+        "name": "iPhone 11",
+        "brand": "Apple",
+        "price": "699",
+        "stock": "10",
+        "category": "Smartphone",
+        "description": "The iPhone 11 is a powerful and affordable device with a dual-camera system and A13 Bionic chip.",
+        "thumbnail": "https://example.com/iphone11.jpg"
+    },
+    {
+        "name": "Galaxy S20",
+        "brand": "Samsung",
+        "price": "999",
+        "stock": "5",
+        "category": "Smartphone",
+        "description": "The Galaxy S20 is a flagship device with a stunning display, powerful camera, and 5G connectivity.",
+        "thumbnail": "https://example.com/galaxys20.jpg"
+    },
+    {
+        "name": "Pixel 4",
+        "brand": "Google",
+        "price": "799",
+        "stock": "8",
+        "category": "Smartphone",
+        "description": "The Pixel 4 features a high-quality camera, fast face unlock, and a smooth 90Hz display.",
+        "thumbnail": "https://example.com/pixel4.jpg"
+    },
+    {
+        "name": "Mate 30 Pro",
+        "brand": "Huawei",
+        "price": "1099",
+        "stock": "3",
+        "category": "Smartphone",
+        "description": "The Mate 30 Pro boasts a powerful Kirin 990 processor, Leica quad camera system, and a large OLED display.",
+        "thumbnail": "https://example.com/mate30pro.jpg"
+    },
+    {
+        "name": "Xperia 1 II",
+        "brand": "Sony",
+        "price": "1199",
+        "stock": "2",
+        "category": "Smartphone",
+        "description": "The Xperia 1 II offers a 4K OLED display, professional-grade camera, and support for 5G networks.",
+        "thumbnail": "https://example.com/xperia1ii.jpg"
+    },
+    {
+        "name": "OnePlus 8 Pro",
+        "brand": "OnePlus",
+        "price": "899",
+        "stock": "6",
+        "category": "Smartphone",
+        "description": "The OnePlus 8 Pro features a 120Hz Fluid Display, Snapdragon 865 processor, and Warp Charge 30T.",
+        "thumbnail": "https://example.com/oneplus8pro.jpg"
+    },
+    {
+        "name": "Mi 10 Pro",
+        "brand": "Xiaomi",
+        "price": "999",
+        "stock": "4",
+        "category": "Smartphone",
+        "description": "The Mi 10 Pro offers a 108MP quad camera system, Snapdragon 865 processor, and 5G connectivity.",
+        "thumbnail": "https://example.com/mi10pro.jpg"
+    },
+    {
+        "name": "Reno3 Pro",
+        "brand": "OPPO",
+        "price": "799",
+        "stock": "7",
+        "category": "Smartphone",
+        "description": "The Reno3 Pro features a 44MP dual punch-hole camera, MediaTek Helio P95 processor, and a large AMOLED display.",
+        "thumbnail": "https://example.com/reno3pro.jpg"
+    },
+    {
+        "name": "G8 ThinQ",
+        "brand": "LG",
+        "price": "699",
+        "stock": "9",
+        "category": "Smartphone",
+        "description": "The G8 ThinQ offers a Crystal Sound OLED display, dual rear cameras, and a Snapdragon 855 processor.",
+        "thumbnail": "https://example.com/g8thinq.jpg"
+    },
+    {
+        "name": "Redmi Note 9 Pro",
+        "brand": "Xiaomi",
+        "price": "249",
+        "stock": "15",
+        "category": "Smartphone",
+        "description": "The Redmi Note 9 Pro features a 64MP quad camera system, Snapdragon 720G processor, and a large battery.",
+        "thumbnail": "https://example.com/redminote9pro.jpg"
+    },
+    {
+        "name": "Galaxy A51",
+        "brand": "Samsung",
+        "price": "399",
+        "stock": "11",
+        "category": "Smartphone",
+        "description": "The Galaxy A51 offers a Super AMOLED display, quad rear cameras, and a long-lasting battery.",
+        "thumbnail": "https://example.com/galaxya51.jpg"
+    },
+    {
+        "name": "iPhone SE",
+        "brand": "Apple",
+        "price": "399",
+        "stock": "14",
+        "category": "Smartphone",
+        "description": "The iPhone SE is a compact and affordable device with a powerful A13 Bionic chip and a 4.7-inch Retina HD display.",
+        "thumbnail": "https://example.com/iphonese.jpg"
+    },
+    {
+        "name": "P40 Pro",
+        "brand": "Huawei",
+        "price": "999",
+        "stock": "5",
+        "category": "Smartphone",
+        "description": "The P40 Pro features a Leica quad camera system, Kirin 990 processor, and a large OLED display.",
+        "thumbnail": "https://example.com/p40pro.jpg"
+    },
+    {
+        "name": "Moto G Power",
+        "brand": "Motorola",
+        "price": "249",
+        "stock": "12",
+        "category": "Smartphone",
+        "description": "The Moto G Power offers a 5000mAh battery, triple rear cameras, and a Qualcomm Snapdragon processor.",
+        "thumbnail": "https://example.com/motogpower.jpg"
+    },
+    {
+        "name": "V60 ThinQ",
+        "brand": "LG",
+        "price": "899",
+        "stock": "3",
+        "category": "Smartphone",
+        "description": "The V60 ThinQ features a dual-screen design, Snapdragon 865 processor, and a versatile camera system.",
+        "thumbnail": "https://example.com/v60thinq.jpg"
+    },
+    {
+        "name": "Redmi K30 Pro",
+        "brand": "Xiaomi",
+        "price": "499",
+        "stock": "10",
+        "category": "Smartphone",
+        "description": "The Redmi K30 Pro offers a Snapdragon 865 processor, AMOLED display, and a pop-up selfie camera.",
+        "thumbnail": "https://example.com/redmik30pro.jpg"
+    },
+    {
+        "name": "Galaxy Note10+",
+        "brand": "Samsung",
+        "price": "1099",
+        "stock": "4",
+        "category": "Smartphone",
+        "description": "The Galaxy Note10+ features an S Pen, a large Dynamic AMOLED display, and a versatile camera system.",
+        "thumbnail": "https://example.com/galaxynote10plus.jpg"
+    },
+    {
+        "name": "Xperia 5",
+        "brand": "Sony",
+        "price": "799",
+        "stock": "6",
+        "category": "Smartphone",
+        "description": "The Xperia 5 offers a 21:9 CinemaWide display, a triple camera system, and Dolby Atmos audio.",
+        "thumbnail": "https://example.com/xperia5.jpg"
+    },
+    {
+        "name": "Find X2 Pro",
+        "brand": "OPPO",
+        "price": "1199",
+        "stock": "2",
+        "category": "Smartphone",
+        "description": "The Find X2 Pro features a 120Hz Ultra Vision display, Snapdragon 865 processor, and a versatile camera system.",
+        "thumbnail": "https://example.com/findx2pro.jpg"
+    },
+    {
+        "name": "Mi Note 10",
+        "brand": "Xiaomi",
+        "price": "549",
+        "stock": "8",
+        "category": "Smartphone",
+        "description": "The Mi Note 10 offers a penta camera system with a 108MP primary sensor, Snapdragon 730G processor, and a large AMOLED display.",
+        "thumbnail": "https://example.com/minote10.jpg"
+    },
+    {
+        "name": "iPhone 11 Pro",
+        "brand": "Apple",
+        "price": "999",
+        "stock": "3",
+        "category": "Smartphone",
+        "description": "The iPhone 11 Pro features a triple-camera system, A13 Bionic chip, and a Super Retina XDR display.",
+        "thumbnail": "https://example.com/iphone11pro.jpg"
+    },
+    {
+        "name": "Galaxy S20+",
+        "brand": "Samsung",
+        "price": "1199",
+        "stock": "2",
+        "category": "Smartphone",
+        "description": "The Galaxy S20+ offers a larger display than the S20, a powerful camera system, and 5G connectivity.",
+        "thumbnail": "https://example.com/galaxys20plus.jpg"
+    },
+    {
+        "name": "Pixel 4 XL",
+        "brand": "Google",
+        "price": "899",
+        "stock": "5",
+        "category": "Smartphone",
+        "description": "The Pixel 4 XL features a larger display than the Pixel 4, a high-quality camera, and a smooth 90Hz refresh rate.",
+        "thumbnail": "https://example.com/pixel4xl.jpg"
+    },
+    {
+        "name": "Mate Xs",
+        "brand": "Huawei",
+        "price": "2499",
+        "stock": "1",
+        "category": "Smartphone",
+        "description": "The Mate Xs is a foldable device with a large flexible OLED display, a powerful Kirin 990 processor, and a Leica quad camera system.",
+        "thumbnail": "https://example.com/matexs.jpg"
+    },
+    {
+        "name": "Xperia 10 II",
+        "brand": "Sony",
+        "price": "399",
+        "stock": "9",
+        "category": "Smartphone",
+        "description": "The Xperia 10 II offers a 21:9 OLED display, a triple camera system, and water resistance.",
+        "thumbnail": "https://example.com/xperia10ii.jpg"
+    },
+    {
+        "name": "OnePlus 8",
+        "brand": "OnePlus",
+        "price": "699",
+        "stock": "7",
+        "category": "Smartphone",
+        "description": "The OnePlus 8 features a 90Hz Fluid Display, Snapdragon 865 processor, and Warp Charge 30T.",
+        "thumbnail": "https://example.com/oneplus8.jpg"
+    },
+    {
+        "name": "Mi 10",
+        "brand": "Xiaomi",
+        "price": "799",
+        "stock": "4",
+        "category": "Smartphone",
+        "description": "The Mi 10 offers a 108MP quad camera system, Snapdragon 865 processor, and 5G connectivity.",
+        "thumbnail": "https://example.com/mi10.jpg"
+    },
+    {
+        "name": "Reno3",
+        "brand": "OPPO",
+        "price": "599",
+        "stock": "6",
+        "category": "Smartphone",
+        "description": "The Reno3 features a 44MP dual punch-hole camera, MediaTek Helio P90 processor, and a large AMOLED display.",
+        "thumbnail": "https://example.com/reno3.jpg"
+    },
+    {
+        "name": "G8X ThinQ",
+        "brand": "LG",
+        "price": "699",
+        "stock": "5",
+        "category": "Smartphone",
+        "description": "The G8X ThinQ features a dual-screen design, a Snapdragon 855 processor, and a versatile camera system.",
+        "thumbnail": "https://example.com/g8xthinq.jpg"
+    },
+    {
+        "name": "Redmi Note 9S",
+        "brand": "Xiaomi",
+        "price": "249",
+        "stock": "10",
+        "category": "Smartphone",
+        "description": "The Redmi Note 9S offers a quad camera system, Snapdragon 720G processor, and a large battery.",
+        "thumbnail": "https://example.com/redminote9s.jpg"
+    },
+    {
+        "name": "Galaxy A71",
+        "brand": "Samsung",
+        "price": "499",
+        "stock": "8",
+        "category": "Smartphone",
+        "description": "The Galaxy A71 offers a Super AMOLED Plus display, quad rear cameras, and a long-lasting battery.",
+        "thumbnail": "https://example.com/galaxya71.jpg"
+    }
+]

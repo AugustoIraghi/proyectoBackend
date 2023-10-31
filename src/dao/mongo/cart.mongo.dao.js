@@ -2,13 +2,16 @@ import CartModel from '../models/cart.model.js';
 
 export default class Cart {
     get = async() => await CartModel.find()
-    create = async(data) => await CartModel.create(data)
+    create = async(data) => {
+        await CartModel.create(data)
+        return data
+    }
     getById = async(id) => await CartModel.findById(id)
-    updata = async(id, data) => await CartModel.updateOne({ id }, data)
-    deleteById = async(id) => await CartModel.deleteOne({ id })
-    addProduct = async(id, product) => await CartModel.updateOne({ id }, { $push: { products: product } })
-    deleteProduct = async(id, product) => await CartModel.updateOne({ id }, { $pull: { products: product } })
-    deleteAllProducts = async(id) => await CartModel.updateOne({ id }, { $set: { products: [] } })
+    updata = async(id, data) => await CartModel.updateOne({ _id: id }, data)
+    deleteById = async(id) => await CartModel.deleteOne({ _id: id })
+    addProduct = async(id, product) => await CartModel.updateOne({ _id: id }, { $push: { products: product } })
+    deleteProduct = async(id, product) => await CartModel.updateOne({ _id: id }, { $pull: { products: product } })
+    deleteAllProducts = async(id) => await CartModel.updateOne({ _id: id }, { $set: { products: [] } })
     getProducts = async(id) => await CartModel.findById(id, { products: 1 })
-    purchase = async(id) => await CartModel.updateOne({ id }, { $set: { state: 'closed' } })
+    purchase = async(id) => await CartModel.updateOne({ _id: id }, { $set: { state: 'closed' } })
 }

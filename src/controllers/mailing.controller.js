@@ -1,33 +1,35 @@
 import nodemailer from 'nodemailer'
 import Mailgen from 'mailgen'
 import { generateToken } from '../utils/index.js'
-import { transporter } from '../utils/index.js'
+import { mailConfig } from '../utils/index.js'
 
-// const testAccount = await nodemailer.createTestAccount()
 
 
 export const signupMail = async (req, res) => {
-    // const transporter = nodemailer.createTransport(mailConfig)
+    const transporter = nodemailer.createTransport(mailConfig)
     const token = generateToken(req.user)
     const mailGenerator = new Mailgen({
         theme: 'default',
         product: {
             name: 'Coder Ecommerce',
-            link: 'http://algoalgo.com'
+            link: 'localhost:8080/'
         }
     })
 
     const content = {
         body: {
+            greeting: 'Bienvenido',
+            name: req.user.first_name,
             intro: 'Te registraste en Coder Ecommerce',
             action: {
                 instructions: 'Para confirmar tu cuenta, haz click aquí:',
                 button: {
                     color: '#22BC66',
                     text: 'Confirmar tu cuenta',
-                    link: `localhost:8080/users/confirm-mail?token=${token}`
+                    link: `localhost:8080/api/users/confirm-mail?token=${token}`
                 }
             },
+            signature: 'Un saludo',
             outro: 'Si no te registraste, ignora este email.'
         }
     }
@@ -42,10 +44,10 @@ export const signupMail = async (req, res) => {
 
 
     transporter.sendMail(message)
-        .then(data => console.log('Email enviado: ', nodemailer.getTestMessageUrl(data), data))
-        .then(data => logger.info('Email enviado: ', nodemailer.getTestMessageUrl(data)))
+        // .then(data => console.log('Email enviado: ', nodemailer.getTestMessageUrl(data), data))
+        // .then(data => logger.info('Email enviado: ', nodemailer.getTestMessageUrl(data)))
         .then(data => res.status(201).json({ message: 'You should have recieved an email', info: nodemailer.getTestMessageUrl(data) }))
-        .catch(err => logger.error(err))
+        // .catch(err => logger.error(err))
         .catch(err => res.status(500).json({ err }))
 }
 

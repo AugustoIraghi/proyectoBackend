@@ -1,15 +1,16 @@
 import { Router } from 'express';
-import { get, getById, updata, deleteById, changeRole, changeStatus, changePassword } from '../controllers/user.controller.js';
-import { authToken } from '../utils/index.js';
+import { get, updata, deleteById, changeRole, changeStatus, changePassword, create } from '../controllers/user.controller.js';
+import { verifyUser, verifyAdmin } from '../utils/index.js';
+import { signupMail } from '../controllers/mailing.controller.js';
 
 const router = Router();
 
 router.get('/', get);
-router.get('/:id', getById);
-router.put('/:id', updata);
-router.delete('/:id', deleteById);
-router.post('/change-role/', changeRole);
-router.post('/confirm-mail/', authToken, changeStatus);
-router.post('/change-password/', authToken, changePassword);
+router.put('/', verifyAdmin, updata);
+router.delete('/', verifyAdmin, deleteById);
+router.post('/register', create, signupMail);
+router.post('/change-role', changeRole);
+router.post('/confirm-mail', verifyUser, changeStatus);
+router.post('/change-password', verifyUser, changePassword);
 
 export default router;

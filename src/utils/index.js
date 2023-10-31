@@ -3,6 +3,8 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import jwt from 'jsonwebtoken';
 import nodemailer from 'nodemailer'
+import logger from './logger.js';
+import passport from 'passport';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,10 +12,10 @@ export default __dirname;
 
 
 export const JWT_PRIVATE_KEY = 'secret';
-export const JWT_COOKIE_NAME = 'token';
+export const JWT_COOKIE_NAME = 'jwttoken';
 
 const testAccount = await nodemailer.createTestAccount()
-const mailConfig = {
+export const mailConfig = {
     host: 'smtp.ethereal.email',
     port: 587,
     secure: false,
@@ -36,32 +38,41 @@ export const generateToken = (user) => {
     return token;
 }
 
-export const authToken = (req, res, next) => {
-    let token = req.params.token;
-    if (!token) token = req.signedCookies[JWT_PRIVATE_KEY].token;
-    if (!token) return res.status(401).json({ message: 'No token provided' });
-    jwt.verify(token, JWT_PRIVATE_KEY, (err, user) => {
-        if (err) return res.status(403).json({ message: 'Invalid token' });
-        req.user = user;
-        next();
-    })
-}
-
-export const extractCookie = (req) => {
-    let token = null;
-    if (req && req.signedCookies) token = req.signedCookies[JWT_COOKIE_NAME];
-    return token;
-}
-
-export const passportCall = strategy => {
+export const isAdmin = strategy => {
     return async (req, res, next) => {
         passport.authenticate(strategy, { session: false }, (err, user, info) => {
-            if (err) return res.status(500).json({ message: err });
-            if (!user) return res.status(401).json({ message: info.message });
+            if (err) return res.status(500).json({ message: info });
+            if (!user) return res.status(401).json({ message: info });
+            if (user.role !== 'admin') return res.status(403).json({ message: 'You are not an admin' });
             req.user = user;
             next();
         })(req, res, next);
     }
 }
 
-export const transporter = nodemailer.createTransport(mailConfig)
+const isPremiumUser = strategy => {
+    return async (req, res, next) => {
+        passport.authenticate(strategy, { session: false }, (err, user, info) => {
+            if (err) return res.status(500).json({ message: info });
+            if (!user) return res.status(401).json({ message: info });
+            if (user.role !== ('premium' || 'admin')) return res.status(403).json({ message: 'You are not a premium user' });
+            req.user = user;
+            next();
+        })(req, res, next);
+    }
+}
+
+export const passportCall = strategy => {
+    return async (req, res, next) => {
+        passport.authenticate(strategy, { session: false }, (err, user, info) => {
+            if (err) return res.status(500).json({ message: info });
+            if (!user) return res.status(401).json({ message: info });
+            req.user = user;
+            next();
+        })(req, res, next);
+    }
+}
+
+export const verifyAdmin = isAdmin('jwt');
+export const verifyPremiumUser = isPremiumUser('jwt');
+export const verifyUser = passportCall('jwt');

@@ -34,7 +34,7 @@ const createLogger = env => {
                     ),
                 }),
                 new winston.transports.File({
-                    filename: '../logs/errors.log',
+                    filename: './logs/errors.log',
                     level: 'error',
                     format: winston.format.combine(
                         winston.format.timestamp(),

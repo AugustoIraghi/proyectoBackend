@@ -1,0 +1,458 @@
+[
+    {
+      "name": "Laptop",
+      "brand": "Dell",
+      "price": "800",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A high-performance laptop for professional use"
+    },
+    {
+      "name": "Smartphone",
+      "brand": "Samsung",
+      "price": "500",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A feature-rich smartphone with a large display"
+    },
+    {
+      "name": "Headphones",
+      "brand": "Sony",
+      "price": "100",
+      "stock": "30",
+      "category": "Electronics",
+      "description": "High-quality headphones for immersive audio experience"
+    },
+    {
+      "name": "T-shirt",
+      "brand": "Nike",
+      "price": "30",
+      "stock": "50",
+      "category": "Clothing",
+      "description": "A comfortable and stylish t-shirt for everyday wear"
+    },
+    {
+      "name": "Watch",
+      "brand": "Casio",
+      "price": "50",
+      "stock": "15",
+      "category": "Accessories",
+      "description": "A durable and water-resistant watch for outdoor activities"
+    },
+    {
+      "name": "Backpack",
+      "brand": "The North Face",
+      "price": "80",
+      "stock": "25",
+      "category": "Accessories",
+      "description": "A spacious and ergonomic backpack for travel and hiking"
+    },
+    {
+      "name": "Sneakers",
+      "brand": "Adidas",
+      "price": "120",
+      "stock": "40",
+      "category": "Footwear",
+      "description": "Stylish and comfortable sneakers for sports and casual wear"
+    },
+    {
+      "name": "Camera",
+      "brand": "Canon",
+      "price": "500",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A professional-grade camera for photography enthusiasts"
+    },
+    {
+      "name": "Gaming Console",
+      "brand": "Sony",
+      "price": "400",
+      "stock": "5",
+      "category": "Electronics",
+      "description": "A powerful gaming console for immersive gaming experience"
+    },
+    {
+      "name": "Printer",
+      "brand": "HP",
+      "price": "150",
+      "stock": "8",
+      "category": "Electronics",
+      "description": "A versatile printer for home and office use"
+    },
+    {
+      "name": "Mouse",
+      "brand": "Logitech",
+      "price": "50",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A high-precision mouse for gaming and productivity"
+    },
+    {
+      "name": "Keyboard",
+      "brand": "Razer",
+      "price": "100",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A mechanical keyboard with customizable RGB lighting"
+    },
+    {
+      "name": "Monitor",
+      "brand": "LG",
+      "price": "200",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A high-resolution monitor for multimedia and gaming"
+    },
+    {
+      "name": "External Hard Drive",
+      "brand": "Seagate",
+      "price": "80",
+      "stock": "12",
+      "category": "Electronics",
+      "description": "A portable and reliable storage solution"
+    },
+    {
+      "name": "Wireless Earbuds",
+      "brand": "Apple",
+      "price": "150",
+      "stock": "30",
+      "category": "Electronics",
+      "description": "True wireless earbuds with active noise cancellation"
+    },
+    {
+      "name": "Power Bank",
+      "brand": "Anker",
+      "price": "40",
+      "stock": "25",
+      "category": "Accessories",
+      "description": "A high-capacity power bank for charging devices on the go"
+    },
+    {
+      "name": "Smart TV",
+      "brand": "Samsung",
+      "price": "1000",
+      "stock": "5",
+      "category": "Electronics",
+      "description": "A 4K Ultra HD smart TV with built-in streaming services"
+    },
+    {
+      "name": "Tablet",
+      "brand": "Apple",
+      "price": "600",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A versatile tablet for productivity and entertainment"
+    },
+    {
+      "name": "Fitness Tracker",
+      "brand": "Fitbit",
+      "price": "80",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A wearable device for tracking fitness and health metrics"
+    },
+    {
+      "name": "Bluetooth Speaker",
+      "brand": "JBL",
+      "price": "100",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A portable speaker with high-quality audio"
+    },
+    {
+      "name": "External SSD",
+      "brand": "Samsung",
+      "price": "120",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A compact and fast external solid state drive"
+    },
+    {
+      "name": "Wireless Router",
+      "brand": "TP-Link",
+      "price": "50",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A reliable router for high-speed internet connectivity"
+    },
+    {
+      "name": "Smartwatch",
+      "brand": "Apple",
+      "price": "300",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A feature-packed smartwatch with fitness tracking"
+    },
+    {
+      "name": "Gaming Mouse",
+      "brand": "Razer",
+      "price": "80",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A high-performance mouse for gaming"
+    },
+    {
+      "name": "Laptop Stand",
+      "brand": "Rain Design",
+      "price": "40",
+      "stock": "25",
+      "category": "Accessories",
+      "description": "An ergonomic laptop stand for improved posture"
+    },
+    {
+      "name": "Bluetooth Headset",
+      "brand": "Bose",
+      "price": "200",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A wireless headset with noise-cancelling technology"
+    },
+    {
+      "name": "Portable Projector",
+      "brand": "Epson",
+      "price": "300",
+      "stock": "8",
+      "category": "Electronics",
+      "description": "A compact projector for presentations and entertainment"
+    },
+    {
+      "name": "Smart Speaker",
+      "brand": "Amazon",
+      "price": "100",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A voice-controlled speaker with virtual assistant"
+    },
+    {
+      "name": "Digital Camera",
+      "brand": "Nikon",
+      "price": "400",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A versatile camera for capturing high-quality photos and videos"
+    },
+    {
+      "name": "Wireless Mouse",
+      "brand": "Microsoft",
+      "price": "30",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A lightweight and portable mouse for everyday use"
+    },
+    {
+      "name": "Gaming Keyboard",
+      "brand": "Corsair",
+      "price": "150",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A mechanical gaming keyboard with customizable backlighting"
+    },
+    {
+      "name": "Curved Monitor",
+      "brand": "Samsung",
+      "price": "300",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A curved monitor for immersive gaming and multimedia experience"
+    },
+    {
+      "name": "USB Flash Drive",
+      "brand": "SanDisk",
+      "price": "20",
+      "stock": "30",
+      "category": "Electronics",
+      "description": "A compact and portable storage device"
+    },
+    {
+      "name": "Wireless Charger",
+      "brand": "Belkin",
+      "price": "50",
+      "stock": "25",
+      "category": "Accessories",
+      "description": "A convenient charger for compatible smartphones and devices"
+    },
+    {
+      "name": "E-book Reader",
+      "brand": "Kindle",
+      "price": "120",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A lightweight device for reading e-books"
+    },
+    {
+      "name": "Wireless Earphones",
+      "brand": "Sony",
+      "price": "100",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "True wireless earphones with noise-cancelling technology"
+    },
+    {
+      "name": "Bluetooth Keyboard",
+      "brand": "Logitech",
+      "price": "60",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A wireless keyboard for efficient typing"
+    },
+    {
+      "name": "Portable SSD",
+      "brand": "Western Digital",
+      "price": "100",
+      "stock": "12",
+      "category": "Electronics",
+      "description": "A compact and high-speed solid state drive"
+    },
+    {
+      "name": "Wi-Fi Range Extender",
+      "brand": "NETGEAR",
+      "price": "50",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "An extender for expanding Wi-Fi coverage"
+    },
+    {
+      "name": "Smart Thermostat",
+      "brand": "Nest",
+      "price": "200",
+      "stock": "8",
+      "category": "Electronics",
+      "description": "A programmable thermostat for energy efficiency"
+    },
+    {
+      "name": "Cordless Vacuum Cleaner",
+      "brand": "Dyson",
+      "price": "300",
+      "stock": "10",
+      "category": "Home Appliances",
+      "description": "A powerful and versatile vacuum cleaner"
+    },
+    {
+      "name": "Wireless Gaming Headset",
+      "brand": "SteelSeries",
+      "price": "150",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A high-performance headset for gaming"
+    },
+    {
+      "name": "Portable Bluetooth Speaker",
+      "brand": "UE",
+      "price": "80",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A compact and waterproof speaker for outdoor use"
+    },
+    {
+      "name": "External DVD Drive",
+      "brand": "ASUS",
+      "price": "50",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A portable drive for reading and writing DVDs"
+    },
+    {
+      "name": "Wireless Security Camera",
+      "brand": "Arlo",
+      "price": "150",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A weatherproof camera for home security"
+    },
+    {
+      "name": "Smart Plug",
+      "brand": "TP-Link",
+      "price": "30",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A plug for controlling devices remotely"
+    },
+    {
+      "name": "Bluetooth Car Kit",
+      "brand": "Jabra",
+      "price": "50",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A hands-free kit for car audio systems"
+    },
+    {
+      "name": "Portable Power Station",
+      "brand": "Jackery",
+      "price": "200",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A high-capacity power station for camping and emergencies"
+    },
+    {
+      "name": "Wireless Gaming Mouse",
+      "brand": "Logitech",
+      "price": "100",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A high-performance mouse for gaming"
+    },
+    {
+      "name": "Webcam",
+      "brand": "Microsoft",
+      "price": "80",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A high-definition webcam for video conferencing and streaming"
+    },
+    {
+      "name": "Wireless Charging Pad",
+      "brand": "Samsung",
+      "price": "40",
+      "stock": "25",
+      "category": "Accessories",
+      "description": "A sleek and fast wireless charger"
+    },
+    {
+      "name": "Noise-Cancelling Headphones",
+      "brand": "Bose",
+      "price": "300",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "Headphones with advanced noise-cancelling technology"
+    },
+    {
+      "name": "Wireless Router",
+      "brand": "ASUS",
+      "price": "100",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A high-speed router with multiple antennas"
+    },
+    {
+      "name": "Smart Scale",
+      "brand": "Withings",
+      "price": "80",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "A connected scale for tracking weight and body composition"
+    },
+    {
+      "name": "Wireless Gaming Keyboard",
+      "brand": "Razer",
+      "price": "150",
+      "stock": "15",
+      "category": "Electronics",
+      "description": "A mechanical gaming keyboard with programmable keys"
+    },
+    {
+      "name": "Bluetooth Earbuds",
+      "brand": "Jabra",
+      "price": "100",
+      "stock": "20",
+      "category": "Electronics",
+      "description": "True wireless earbuds with a secure fit"
+    },
+    {
+      "name": "Portable Monitor",
+      "brand": "ASUS",
+      "price": "200",
+      "stock": "10",
+      "category": "Electronics",
+      "description": "A slim and lightweight monitor for on-the-go productivity"
+    }
+  ]

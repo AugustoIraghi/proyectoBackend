@@ -4,7 +4,7 @@ import { get, create, getById, updata, deleteById } from '../controllers/cart.co
 const router = Router();
 
 router.get('/', get);
-// router.post('/', create);
+router.post('/', create);
 router.get('/:id', getById);
 router.put('/:id', updata);
 router.delete('/:id', deleteById);
