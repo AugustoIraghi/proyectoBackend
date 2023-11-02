@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
+import mongoosePaginate from "mongoose-paginate-v2";
 
 const UserSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
@@ -14,6 +15,7 @@ const UserSchema = new mongoose.Schema({
 UserSchema.pre('updateOne', async function(next) {
     if (!this._update.password) return next();
     const password = this._update.password;
+    if (password.length < 6) throw new Error('Password must be at least 6 characters');
     if (!password) return next();
     const hash = await bcrypt.hash(password, 10);
     this._update.password = hash;
@@ -21,10 +23,14 @@ UserSchema.pre('updateOne', async function(next) {
 })
 
 UserSchema.pre('save', async function(next) {
+    if (!this.password) return next();
+    if (this.password.length < 6) throw new Error('Password must be at least 6 characters');
     const hash = await bcrypt.hash(this.password, 10);
     this.password = hash;
     next();
 })
+
+UserSchema.plugin(mongoosePaginate);
 
 const UserModel = mongoose.model("user", UserSchema);
 

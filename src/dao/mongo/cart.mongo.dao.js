@@ -14,4 +14,5 @@ export default class Cart {
     deleteAllProducts = async(id) => await CartModel.updateOne({ _id: id }, { $set: { products: [] } })
     getProducts = async(id) => await CartModel.findById(id, { products: 1 })
     purchase = async(id) => await CartModel.updateOne({ _id: id }, { $set: { state: 'closed' } })
+    paginate = async(page, filter) => await CartModel.paginate(filter, { page, limit: 10 })
 }

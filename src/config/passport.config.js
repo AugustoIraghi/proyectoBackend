@@ -1,7 +1,6 @@
 import passport from "passport"
 import jwt from 'passport-jwt'
-import { Strategy as localStrategy } from 'passport-local'
-import { JWT_COOKIE_NAME, JWT_PRIVATE_KEY, isValidPassword } from "../utils/index.js"
+import { JWT_COOKIE_NAME, JWT_PRIVATE_KEY } from "../utils/index.js"
 import { UserService } from "../repositories/index.js"
 
 const JWTStrategy = jwt.Strategy
@@ -28,6 +27,19 @@ const initializePassport = () => {
           done(null, false);
         }
       }))
+
+    passport.use('confirm-mail', new JWTStrategy({
+      jwtFromRequest: ExtractJWT.fromUrlQueryParameter('token'),
+      secretOrKey: JWT_PRIVATE_KEY
+    }, async (jwt_payload, done) => {
+      const user = await UserService.getByEmail(jwt_payload.user.email)
+      if (user) {
+        done(null, user);
+      } else {
+        done(null, false);
+      }
+    }))
+
 }
 
 export default initializePassport

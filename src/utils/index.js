@@ -41,8 +41,9 @@ export const generateToken = (user) => {
 export const isAdmin = strategy => {
     return async (req, res, next) => {
         passport.authenticate(strategy, { session: false }, (err, user, info) => {
-            if (err) return res.status(500).json({ message: info });
-            if (!user) return res.status(401).json({ message: info });
+            if (err) return res.status(500).json({ message: err });
+            if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+            if (user.status !== 'active') return res.status(403).json({ message: 'Your account is not active' });
             if (user.role !== 'admin') return res.status(403).json({ message: 'You are not an admin' });
             req.user = user;
             next();
@@ -53,8 +54,9 @@ export const isAdmin = strategy => {
 const isPremiumUser = strategy => {
     return async (req, res, next) => {
         passport.authenticate(strategy, { session: false }, (err, user, info) => {
-            if (err) return res.status(500).json({ message: info });
-            if (!user) return res.status(401).json({ message: info });
+            if (err) return res.status(500).json({ message: err });
+            if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+            if (user.status !== 'active') return res.status(403).json({ message: 'Your account is not active, please confirm your mail.' });
             if (user.role !== ('premium' || 'admin')) return res.status(403).json({ message: 'You are not a premium user' });
             req.user = user;
             next();
@@ -62,17 +64,31 @@ const isPremiumUser = strategy => {
     }
 }
 
-export const passportCall = strategy => {
+const passportCall = strategy => {
     return async (req, res, next) => {
         passport.authenticate(strategy, { session: false }, (err, user, info) => {
-            if (err) return res.status(500).json({ message: info });
-            if (!user) return res.status(401).json({ message: info });
+            if (err) return res.status(500).json({ message: err });
+            if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+            if (user.status !== 'active') return res.status(403).json({ message: 'Your account is not active, please confirm your mail.' });
             req.user = user;
             next();
         })(req, res, next);
     }
 }
 
+const confirmMailMiddleware = strategy => {
+    return async (req, res, next) => {
+        passport.authenticate(strategy, { session: false }, (err, user, info) => {
+            if (err) return res.status(500).json({ message: err.message });
+            if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+            req.user = user;
+            next();
+        })(req, res, next);
+    }
+}
+
+
 export const verifyAdmin = isAdmin('jwt');
 export const verifyPremiumUser = isPremiumUser('jwt');
 export const verifyUser = passportCall('jwt');
+export const mailMiddleware = confirmMailMiddleware('confirm-mail');

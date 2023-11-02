@@ -7,7 +7,7 @@ import { mailConfig } from '../utils/index.js'
 
 export const signupMail = async (req, res) => {
     const transporter = nodemailer.createTransport(mailConfig)
-    const token = generateToken(req.user)
+    const token = generateToken({email: req.user.email})
     const mailGenerator = new Mailgen({
         theme: 'default',
         product: {

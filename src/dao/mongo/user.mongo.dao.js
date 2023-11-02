@@ -13,4 +13,5 @@ export default class User {
     changeRole = async(id, role) => await UserModel.updateOne({ _id: id }, { role })
     changeStatus = async(email, status) => await UserModel.updateOne({ email: email }, { status })
     changePassword = async(email, password) => await UserModel.updateOne({ email: email }, { password })
+    paginate = async(page, filter) => await UserModel.paginate(filter, { page, limit: 10 })
 }

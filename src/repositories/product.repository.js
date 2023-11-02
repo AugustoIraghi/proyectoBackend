@@ -13,4 +13,6 @@ export default class UserRepository {
     updata = async(id, data) => await this.dao.updata(id, data)
     deleteById = async(id) => await this.dao.deleteById(id)
     changeRole = async(id, role) => await this.dao.changeRole(id, role)
+    updateStock = async(id, stock) => await this.dao.updateStock(id, stock)
+    paginate = async(page, filter) => await this.dao.paginate(page, filter)
 }

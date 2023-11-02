@@ -2,7 +2,7 @@ import swaggerJSDoc from 'swagger-jsdoc'
 
 const swaggerOptions = {
     definition: {
-        openapi: '1.0.1',
+        openapi: '1.1.2',
         info: {
             title: 'Documentacion de la API del Proyecto de Backend de Coderhouse',
             description: 'Proyecto final del curso de backend de Coderhouse de Augusto Salmoiraghi',

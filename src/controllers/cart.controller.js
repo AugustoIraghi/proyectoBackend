@@ -5,7 +5,7 @@ export const get = async(req, res) => {
         const carts = await CartService.get()
         res.json({ status: 'success', carts })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -14,7 +14,7 @@ export const create = async(req, res) => {
         const cartNew = await CartService.create({products: []})
         res.json({ status: 'success', cart: cartNew })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -24,7 +24,7 @@ export const getById = async(req, res) => {
         const cart = await CartService.getById(id)
         res.json({ status: 'success', cart })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -35,7 +35,7 @@ export const updata = async(req, res) => {
         const cartUpdata = await CartService.updata(id, cart)
         res.json({ status: 'success', cart: cartUpdata })
     } catch {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -45,7 +45,7 @@ export const deleteById = async(req, res) => {
         const cart = await CartService.deleteById(id)
         res.json({ status: 'success', cart })
     } catch {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -53,11 +53,11 @@ export const addProduct = async(req, res) => {
     try {
         const { id } = req.query
         const { product } = req.body
-        if (!id || !product) return res.status(400).send({ status: 'error', error: 'Missing params' })
+        if (!id || !product) throw new Error('Missing params')
         const cart = await CartService.addProduct(id, product)
         res.json({ status: 'success', cart })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
@@ -65,44 +65,55 @@ export const deleteProduct = async(req, res) => {
     try {
         const { id } = req.query
         const { product } = req.body
-        if (!id || !product) return res.status(400).send({ status: 'error', error: 'Missing params' })
+        if (!id || !product) throw new Error('Missing params')
         const cart = await CartService.deleteProduct(id, product)
         res.json({ status: 'success', cart })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
 export const deleteAllProducts = async(req, res) => {
     try {
         const { id } = req.query
-        if (!id) return res.status(400).send({ status: 'error', error: 'Missing params' })
+        if (!id) throw new Error('Missing params')
         const cart = await CartService.deleteAllProducts(id)
         res.json({ status: 'success', cart })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
 export const getProducts = async(req, res) => {
     try {
         const { id } = req.query
-        if (!id) return res.status(400).send({ status: 'error', error: 'Missing params' })
+        if (!id) throw new Error('Missing params')
         const cart = await CartService.getProducts(id)
         res.json({ status: 'success', cart })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }
 
 export const purchase = async(req, res) => {
     try {
         const { id } = req.params
-        if (!id) return res.status(400).send({ status: 'error', error: 'Missing params' })
+        if (!id) throw new Error('Missing params')
         const cart = await CartService.purchase(id)
         const cartNew = await CartService.create(cart)
         res.json({ status: 'success', cart, cartNew })
     } catch (error) {
-        res.status(400).send({ status: 'error', error: error.message })
+        res.status(400).send({ status: 'error', message: error.message })
+    }
+}
+
+export const paginate = async(req, res) => {
+    try {
+        const { page } = req.query
+        const filter = req.body
+        const carts = await CartService.paginate(page, filter)
+        res.json({ status: 'success', carts })
+    } catch (error) {
+        res.status(400).send({ status: 'error', message: error.message })
     }
 }

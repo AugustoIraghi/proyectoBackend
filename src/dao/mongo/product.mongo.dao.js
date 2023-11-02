@@ -6,4 +6,6 @@ export default class Product {
     getById = async(id) => await ProductModel.findById(id)
     updata = async(id, data) => await ProductModel.updateOne({ _id: id }, data)
     deleteById = async(id) => await ProductModel.deleteOne({ _id: id })
+    updateStock = async(id, stock) => await ProductModel.updateOne({ _id: id }, { stock: stock })
+    paginate = async(page, filter) => await ProductModel.paginate(filter, { page, limit: 10 })
 }

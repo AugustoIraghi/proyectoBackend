@@ -16,4 +16,5 @@ export default class UserRepository {
     changeRole = async(id, role) => await this.dao.changeRole(id, role)
     changeStatus = async(id, status) => await this.dao.changeStatus(id, status)
     changePassword = async(id, password) => await this.dao.changePassword(id, password)
+    paginate = async(page, filter) => await this.dao.paginate(page, filter)
 }
