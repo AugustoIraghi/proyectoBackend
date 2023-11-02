@@ -5,6 +5,7 @@ import logger from '../utils/logger.js'
 export let Cart
 export let Product
 export let User
+export let Ticket
 
 switch (config.persistence) {
     // case 'FILE':
@@ -20,9 +21,11 @@ switch (config.persistence) {
         const { default: CartMongo } = await import ('./mongo/cart.mongo.dao.js')
         const { default: ProductMongo } = await import ('./mongo/product.mongo.dao.js')
         const { default: UserMongo } = await import ('./mongo/user.mongo.dao.js')
+        const { default: TicketMongo } = await import ('./mongo/ticket.mongo.dao.js')
         User = UserMongo
         Product = ProductMongo
         Cart = CartMongo
+        Ticket = TicketMongo
         logger.info('MongoDB connected')
         break;
 

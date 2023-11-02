@@ -17,5 +17,5 @@ export default class CartRepository {
     deleteAllProducts = async(id) => await this.dao.deleteAllProducts(id)
     getProducts = async(id) => await this.dao.getProducts(id)
     purchase = async(id) => await this.dao.purchase(id)
-    paginate = async(page, filter) => await this.dao.paginate(page, filter)
+    paginate = async(page, filter) => await this.dao.paginate(page)
 }

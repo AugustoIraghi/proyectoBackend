@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import mongoosePaginate from "mongoose-paginate-v2";
 
-const CartSchema = new mongoose.Schema({
+const TicketSchema = new mongoose.Schema({
     products: {
         type: [{
             product: {
@@ -12,14 +12,18 @@ const CartSchema = new mongoose.Schema({
         }],
         default: []
     },
+    total: {
+        type: Number,
+        required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now()
+    }
 });
 
-CartSchema.pre('findById', function() {
-    this.populate('products.product');
-});
+TicketSchema.plugin(mongoosePaginate);
 
-CartSchema.plugin(mongoosePaginate);
+const TicketModel = mongoose.model("ticket", TicketSchema);
 
-const CartModel = mongoose.model("cart", CartSchema);
-
-export default CartModel;
+export default TicketModel;
