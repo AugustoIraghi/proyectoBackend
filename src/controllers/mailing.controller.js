@@ -12,7 +12,7 @@ export const signupMail = async (req, res) => {
         theme: 'default',
         product: {
             name: 'Coder Ecommerce',
-            link: 'localhost:8080/'
+            link: 'http://localhost:8080'
         }
     })
 
@@ -26,7 +26,7 @@ export const signupMail = async (req, res) => {
                 button: {
                     color: '#22BC66',
                     text: 'Confirmar tu cuenta',
-                    link: `localhost:8080/api/users/confirm-mail?token=${token}`
+                    link: `http://localhost:8080/api/users/confirm-mail?token=${token}`
                 }
             },
             signature: 'Un saludo',

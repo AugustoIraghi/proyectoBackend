@@ -11,6 +11,10 @@ const ProductSchema = new mongoose.Schema({
     description: String,
 });
 
+ProductSchema.methods.checkStock = function(quantity) {
+    return this.stock >= quantity;
+}
+
 ProductSchema.plugin(mongoosePaginate);
 
 const ProductModel = mongoose.model("product", ProductSchema);

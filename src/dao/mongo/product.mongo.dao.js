@@ -6,6 +6,12 @@ export default class Product {
     getById = async(id) => await ProductModel.findById(id)
     updata = async(id, data) => await ProductModel.updateOne({ _id: id }, data)
     deleteById = async(id) => await ProductModel.deleteOne({ _id: id })
-    updateStock = async(id, stock) => await ProductModel.updateOne({ _id: id }, { stock: stock })
+    updateStock = async(id, stock) => {
+        const product = await ProductModel.findById(id)
+        if (!product.checkStock(stock)) throw new Error('Missing stock')
+        const newStock = product.stock + stock
+        await ProductModel.updateOne({_id: id}, { stock: newStock })
+    }
+    // updateStock = async(id, stock) => await ProductModel.updateOne({ _id: id }, { stock: stock })
     paginate = async(page, filter) => await ProductModel.paginate(filter, { page, limit: 10 })
 }
