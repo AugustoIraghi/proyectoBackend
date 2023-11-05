@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import mongoosePaginate from "mongoose-paginate-v2";
+import { isValidPassword } from "../../utils/index.js";
 
 const UserSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true },
@@ -15,7 +16,8 @@ const UserSchema = new mongoose.Schema({
 UserSchema.pre('updateOne', async function(next) {
     if (!this._update.password) return next();
     const password = this._update.password;
-    if (password === this.password) throw new Error('New password must be different from the old one');
+    const oldPassword = await this.model.findOne(this.getQuery()).select('password');
+    if (isValidPassword(oldPassword, password)) throw new Error('New password must be different from the old one');
     if (password.length < 6) throw new Error('Password must be at least 6 characters');
     if (!password) return next();
     const hash = await bcrypt.hash(password, 10);

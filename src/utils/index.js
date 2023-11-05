@@ -15,13 +15,23 @@ export const JWT_PRIVATE_KEY = 'secret';
 export const JWT_COOKIE_NAME = 'jwttoken';
 
 const testAccount = await nodemailer.createTestAccount()
+
 export const mailConfig = {
-    host: 'smtp.ethereal.email',
-    port: 587,
-    secure: false,
-    auth: {
-        user: testAccount.user,
-        pass: testAccount.pass
+    transporterConfig: {
+        host: 'smtp.ethereal.email',
+        port: 587,
+        secure: false,
+        auth: {
+            user: testAccount.user,
+            pass: testAccount.pass
+        }
+    },
+    mailGeneratorConfig: {
+        theme: 'default',
+        product: {
+            name: 'Coder Ecommerce',
+            link: 'http://localhost:8080'
+        }
     }
 }
 
