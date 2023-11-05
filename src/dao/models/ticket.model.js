@@ -14,6 +14,7 @@ const TicketSchema = new mongoose.Schema({
     },
     total: {
         type: Number,
+        default: 0,
         required: true
     },
     date: {
@@ -21,6 +22,22 @@ const TicketSchema = new mongoose.Schema({
         default: Date.now()
     }
 });
+
+TicketSchema.statics.findByUserId = async function(userId) {
+    return await this.findOne({ userId });
+};
+
+// TicketSchema.pre("save", async function(next) {
+//     console.log(this.products);
+//     // this.products.populate('products')
+//     // console.log(this.products.reduce((total, product) => total + product.price * product.quantity, 0));
+//     this.total = this.products.reduce((total, product) => total + product.price * product.quantity, 0);
+//     next();
+// });
+
+TicketSchema.methods.calculateTotal = function(products) {
+    return products.reduce((total, product) => total + product.price * product.quantity, 0);
+}
 
 TicketSchema.plugin(mongoosePaginate);
 

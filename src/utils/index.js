@@ -33,8 +33,8 @@ export const isValidPassword = (user, password) => {
     return bcrypt.compareSync(password, user.password);
 }
 
-export const generateToken = (user) => {
-    const token = jwt.sign({ user }, JWT_PRIVATE_KEY, { expiresIn: '24h' });
+export const generateToken = (user, expiresIn) => {
+    const token = jwt.sign({ user }, JWT_PRIVATE_KEY, { expiresIn: expiresIn || '24h' });
     return token;
 }
 
@@ -76,7 +76,7 @@ const passportCall = strategy => {
     }
 }
 
-const confirmMailMiddleware = strategy => {
+const mailMiddleware = strategy => {
     return async (req, res, next) => {
         passport.authenticate(strategy, { session: false }, (err, user, info) => {
             if (err) return res.status(500).json({ message: err.message });
@@ -87,8 +87,20 @@ const confirmMailMiddleware = strategy => {
     }
 }
 
+// const resetPasswordMiddleware = strategy => {
+//     return async (req, res, next) => {
+//         passport.authenticate(strategy, { session: false }, (err, user, info) => {
+//             if (err) return res.status(500).json({ message: err.message });
+//             if (!user) return res.status(401).json({ message: 'Invalid credentials' });
+//             req.user = user;
+//             next();
+//         })(req, res, next);
+//     }
+// }
+
 
 export const verifyAdmin = isAdmin('jwt');
 export const verifyPremiumUser = isPremiumUser('jwt');
 export const verifyUser = passportCall('jwt');
-export const mailMiddleware = confirmMailMiddleware('confirm-mail');
+export const verifyMail = mailMiddleware('jwt-mail');
+// export const resetPassword = resetPasswordMiddleware('jwt-mail');

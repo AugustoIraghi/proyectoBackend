@@ -12,6 +12,12 @@ export default class Product {
         const newStock = product.stock + stock
         await ProductModel.updateOne({_id: id}, { stock: newStock })
     }
+    checkStock = async(id, stock) => {
+        const product = await ProductModel.findById(id)
+        const ok =await product.checkStock(stock)
+        console.log('checkstock', ok)
+        return ok
+    }
     // updateStock = async(id, stock) => await ProductModel.updateOne({ _id: id }, { stock: stock })
     paginate = async(page, filter) => await ProductModel.paginate(filter, { page, limit: 10 })
 }

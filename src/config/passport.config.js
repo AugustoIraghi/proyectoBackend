@@ -28,7 +28,7 @@ const initializePassport = () => {
         }
       }))
 
-    passport.use('confirm-mail', new JWTStrategy({
+    passport.use('jwt-mail', new JWTStrategy({
       jwtFromRequest: ExtractJWT.fromUrlQueryParameter('token'),
       secretOrKey: JWT_PRIVATE_KEY
     }, async (jwt_payload, done) => {

@@ -15,6 +15,7 @@ const UserSchema = new mongoose.Schema({
 UserSchema.pre('updateOne', async function(next) {
     if (!this._update.password) return next();
     const password = this._update.password;
+    if (password === this.password) throw new Error('New password must be different from the old one');
     if (password.length < 6) throw new Error('Password must be at least 6 characters');
     if (!password) return next();
     const hash = await bcrypt.hash(password, 10);

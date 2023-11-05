@@ -53,12 +53,12 @@ export const signupMail = async (req, res) => {
 
 export const resetPasswordMail = async (req, res) => {
     const transporter = nodemailer.createTransport(mailConfig)
-    const token = generateToken(req.user)
+    const token = generateToken(req.body.mail, '1h')
     const mailGenerator = new Mailgen({
         theme: 'default',
         product: {
             name: 'Coder Ecommerce',
-            link: 'http://algoalgo.com'
+            link: 'http://localhost:8080'
         }
     })
 
@@ -70,7 +70,7 @@ export const resetPasswordMail = async (req, res) => {
                 button: {
                     color: '#22BC66',
                     text: 'Cambiar contraseña',
-                    link: `http://algoalgo.com/users/reset-password?token=${token}`
+                    link: `http://localhost:8080/api/users/confirm-mail?token=${token}`
                 }
             },
             outro: 'Si no solicitaste un cambio de contraseña, ignora este email.'
@@ -86,9 +86,9 @@ export const resetPasswordMail = async (req, res) => {
     }
     
     transporter.sendMail(message)
-        .then(data => console.log('Email enviado: ', nodemailer.getTestMessageUrl(data), data))
-        .then(data => logger.info('Email enviado: ', nodemailer.getTestMessageUrl(data)))
+        // .then(data => console.log('Email enviado: ', nodemailer.getTestMessageUrl(data), data))
+        // .then(data => logger.info('Email enviado: ', nodemailer.getTestMessageUrl(data)))
         .then(data => res.status(201).json({ message: 'You should have recieved an email', info: nodemailer.getTestMessageUrl(data) }))
-        .catch(err => logger.error(err))
+        // .catch(err => logger.error(err))
         .catch(err => res.status(500).json({ err }))
 }
