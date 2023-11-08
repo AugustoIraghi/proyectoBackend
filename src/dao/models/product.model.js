@@ -6,9 +6,10 @@ const ProductSchema = new mongoose.Schema({
     brand: { type: String, required: true},
     price: { type: Number, required: true, min: 0},
     stock: { type: Number, required: true, min: 0},
-    category: { type: String, required: true},
+    category: { type: String, required: true },
+    owner: { type: String, required: true },
     thumbnail: String,
-    description: String,
+    description: String
 });
 
 ProductSchema.methods.checkStock = function(quantity) {
